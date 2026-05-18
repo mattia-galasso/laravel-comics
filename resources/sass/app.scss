@@ -6,3 +6,246 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+:root {
+  --color-blue: #0282f9;
+}
+
+/*? GENERAL RULES */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* HEADER */
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  align-self: center;
+  padding: 10px 0px;
+}
+
+.DCLogoImage {
+  height: 4rem;
+}
+
+#navbarList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+#navbarList > li {
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  color: #0282f9;
+  box-shadow: inset 0 -6px 0 0 var(--color-blue);
+}
+
+/* MAIN COMICS LIST */
+
+/* JUMBOTRON */
+#jumbotron {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+/* CURRENT SERIES */
+#current-series {
+  background-color: var(--color-blue);
+  position: absolute;
+  top: 0;
+  left: 11%;
+  translate: 0 -50%;
+  width: 12.5rem;
+  height: 2.7rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+/* COMICS LIST */
+#main-box {
+  position: relative;
+  background-color: #303030;
+  color: white;
+}
+
+.comicImage img {
+  aspect-ratio: 8 / 13;
+  object-fit: cover;
+}
+
+#comics-list li {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+#comics-list figure {
+  margin: 0.2rem 0.7rem;
+}
+
+/* LOAD MORE BTN */
+
+#btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#more-btn {
+  width: 12rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  background-color: var(--color-blue);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+/* BANNER */
+
+#bannerSection {
+  background-color: var(--color-blue);
+  color: white;
+  height: 9rem;
+  padding: 3rem;
+}
+
+.iconComics {
+  width: 2.5rem;
+}
+
+.iconBanner {
+  width: 3rem;
+}
+
+.iconLocator {
+  width: 2rem;
+}
+
+#bannerList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bannerList > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+/* FOOTER */
+
+#DCFooter {
+  position: relative;
+  height: 25rem;
+  background-image: url('../img/footer-bg.jpg');
+  color: white;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+#footerMenu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+#list-box {
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.listTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+#footerMenu ul {
+  padding-left: 0;
+}
+
+#footerMenu li {
+  margin: 3px 0;
+  font-size: 0.8rem;
+  color: rgb(163, 161, 161);
+}
+
+#logoFooter {
+  height: 500px;
+  scale: 1.2;
+  translate: 54% -20%;
+}
+
+/* SOCIAL */
+#socialSection {
+  padding: 1.2rem;
+  background-color: #303030;
+  height: 6rem;
+}
+
+#socialBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btnSignUp {
+  border-radius: 0;
+  color: white;
+  font-weight: 700;
+}
+
+#socialBox > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialBox li {
+    cursor: pointer;
+}
+
+#socialBox span {
+  font-weight: 700;
+  color: var(--color-blue);
+  font-size: 1.2rem;
+}
+
+#socialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 13px;
+}
